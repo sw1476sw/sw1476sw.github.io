@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YOUR NAME | Portfolio</title>
-<meta name="description" content="Portfolio of YOUR NAME: skills, projects, and resume.">
+<title>Sebastian Wozny | Portfolio</title>
+<meta name="description" content="Portfolio of Sebastian Wozny: skills, projects, and resume.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#F4F7F9; --surface:#FFFFFF; --ink:#18232F; --muted:#546270;
-    --accent:#0E6B73; --accent-soft:#DCEEF0; --line:#D5DEE4;
+    --accent:#CC0033; --accent-soft:#F9E1E6; --line:#D5DEE4;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth;scroll-padding-top:70px}
@@ -32,13 +33,15 @@
 
   .hero{padding:72px 0 56px}
   .hero .wrap{display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:center}
-  .hero h1{font-size:clamp(2rem,5.2vw,3.4rem);font-weight:700;letter-spacing:-.02em}
+  .rbs{height:46px;width:auto;display:block;margin-bottom:18px}
+  .rbs-text{display:inline-block;color:var(--accent);font-weight:700;font-size:1.05rem;margin-bottom:18px;padding-bottom:4px;border-bottom:3px solid var(--accent)}
+  .hero h1{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(1.7rem,4vw,2.5rem);font-weight:700;letter-spacing:-.02em}
   .hero p.sub{color:var(--muted);margin:18px 0 28px;max-width:34em}
   .btns{display:flex;gap:12px;flex-wrap:wrap}
   .btn{display:inline-block;padding:11px 20px;border-radius:8px;text-decoration:none;
     font-weight:600;font-size:15px;border:2px solid var(--accent)}
   .btn.primary{background:var(--accent);color:#fff}
-  .btn.primary:hover{background:#0A555C}
+  .btn.primary:hover{background:#A3002A}
   .btn.ghost{color:var(--accent)}
   .btn.ghost:hover{background:var(--accent-soft)}
   .photo{width:220px;height:220px;border-radius:50%;overflow:hidden;background:var(--accent-soft);
@@ -52,7 +55,7 @@
   .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
   .skill-group h3{font-size:1.1rem;margin-bottom:10px}
   .tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
-  .tags li{background:var(--accent-soft);color:#0A4A50;padding:5px 12px;border-radius:999px;font-size:15px}
+  .tags li{background:var(--accent-soft);color:#7A0020;padding:5px 12px;border-radius:999px;font-size:15px}
 
   .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px}
   .project{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);
@@ -62,6 +65,7 @@
   .project p{margin:0 0 16px}
   .project .links{margin-top:auto;display:flex;gap:16px;font-weight:600;font-size:15px}
 
+  .pdf{width:100%;height:720px;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
   .contact p{max-width:34em}
   footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
 
@@ -77,10 +81,11 @@
 
 <nav aria-label="Main">
   <div class="wrap">
-    <strong>YOUR NAME</strong>
+    <strong>Sebastian Wozny</strong>
     <ul>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -91,8 +96,9 @@
   <header class="hero">
     <div class="wrap">
       <div>
-        <h1>I'm YOUR NAME, an accounting and information systems major at Rutgers Business School who brings a hands-on, dependable work ethic from construction sites to the classroom.</h1>
-        <p class="sub">Rutgers Business School, B.S. in Accounting and Accounting Information Systems, GPA 3.74, graduating May 2029.</p>
+        <img class="rbs" src="rbs-logo.png" alt="Rutgers Business School" onerror="this.outerHTML='<span class=rbs-text>Rutgers Business School</span>'">
+        <h1>Hi! I'm Sebastian Wozny, a Rutgers accounting and information systems student with a dependable, hands-on work ethic.</h1>
+        <p class="sub">Sophomore at Rutgers Business School, GPA 3.74, graduating May 2029. Seeking experience in accounting and finance roles.</p>
         <div class="btns">
           <a class="btn primary" href="resume.pdf" download>Download resume</a>
           <a class="btn ghost" href="#projects">See my projects</a>
@@ -100,7 +106,7 @@
       </div>
       <!-- If headshot.jpg is missing, your initials show instead -->
       <div class="photo">
-        <img src="headshot.jpg" alt="Headshot of YOUR NAME" onerror="this.remove();this.parentNode.textContent='YN'">
+        <img src="headshot.jpg" alt="Headshot of Sebastian Wozny" onerror="this.remove();this.parentNode.textContent='SW'">
       </div>
     </div>
   </header>
@@ -116,7 +122,8 @@
           <ul class="tags">
             <li>Teamwork</li>
             <li>Reliability</li>
-            <li>Workplace safety</li>
+            <li>Organization</li>
+            <li>Attention to detail</li>
             <li>Clear communication</li>
             <li>Customer service</li>
           </ul>
@@ -127,7 +134,6 @@
             <li>Microsoft Office</li>
             <li>Adobe Photoshop</li>
             <li>Vegas Pro</li>
-            <li>HTML &amp; GitHub Pages</li>
           </ul>
         </div>
         <div class="skill-group">
@@ -145,14 +151,13 @@
   <section id="projects">
     <div class="wrap">
       <h2>Projects</h2>
-      <p class="lede">Work, volunteering, and building this site. Each one shows how I work with others and follow through.</p>
+      <p class="lede">Work and volunteer experience that show how I work with others and follow through.</p>
       <div class="projects">
 
         <article class="project">
           <h3>Construction crew work, Manhattan</h3>
           <p class="meta">All Proof Contracting LLC, May 2023 to present</p>
           <p>I work on a crew doing sidewalk caulking, repairs, and painting. I coordinate with coworkers so the right tools and materials are ready, and I keep job sites clean and safe with pedestrian paths open.</p>
-          <div class="links"><span>Reference available on request</span></div>
         </article>
 
         <article class="project">
@@ -162,13 +167,26 @@
           <div class="links"><span>Public recognition from the cleanup organization</span></div>
         </article>
 
+        <!-- THIRD PROJECT (optional): copy this, remove the comment marks, and fill it in
         <article class="project">
-          <h3>This portfolio website</h3>
-          <p class="meta">Personal project, Fall 2026</p>
-          <p>I planned, built, and published this site with HTML and GitHub Pages, using an AI assistant to draft the code. I then edited the content and tested every link.</p>
-          <div class="links"><a href="https://github.com/YOUR-USERNAME/YOUR-REPO">View the code on GitHub</a></div>
+          <h3>Project name</h3>
+          <p class="meta">Course name, Semester Year</p>
+          <p>2 to 3 sentences: what the project was, what you did, and the result.</p>
         </article>
+        -->
 
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume">
+    <div class="wrap">
+      <h2>Resume</h2>
+      <p class="lede">My full resume as a PDF.</p>
+      <div class="btns">
+        <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">View resume</a>
+        <a class="btn ghost" href="resume.pdf" download>Download PDF</a>
       </div>
     </div>
   </section>
@@ -177,16 +195,17 @@
   <section id="contact" class="contact">
     <div class="wrap">
       <h2>Contact</h2>
-      <p>Open to internships, part-time work, and conversations. The fastest way to reach me is email.</p>
+      <p>Open to internships, part-time work, and conversations. Feel free to reach out.</p>
       <div class="btns">
-        <a class="btn primary" href="mailto:youremail@example.com">youremail@example.com</a>
+        <a class="btn primary" href="mailto:sebastianwozny.sw@gmail.com">sebastianwozny.sw@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/YOUR-LINKEDIN-NAME" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap">&copy; 2026 YOUR NAME</div>
+  <div class="wrap">&copy; 2026 Sebastian Wozny</div>
 </footer>
 
 </body>
